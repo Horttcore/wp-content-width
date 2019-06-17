@@ -7,5 +7,10 @@
             "name": "Ralf Hortt",
             "email": "me@horttcore.de"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "RalfHortt\\ContentWidth\\": "src/"
+        }
+    }
 }
