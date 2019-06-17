@@ -1,0 +1,11 @@
+{
+    "name": "ralfhortt/wp-content-width",
+    "description": "Setting the global WordPress variable `$content_width` in a single place for php and css",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Ralf Hortt",
+            "email": "me@horttcore.de"
+        }
+    ],
+}
