@@ -23,7 +23,7 @@ class ContentWidth
     public function register(): void
     {
         add_action('init', [$this, 'setWidth']);
-        add_action('enqueue_block_editor_assets', [$this, 'setCssContentWidth']);
+        add_action('admin_print_styles-post.php', [$this, 'setCssContentWidth']);
     }
 
 
@@ -46,6 +46,6 @@ class ContentWidth
      **/
     public function setCssContentWidth(): void
     {
-        printf('<style>.wp-block {--content-width: %dpx;max-width: var(--content-width);}</style>', $this->contentWidth);
+        printf('<style>.editor-block-list__layout .wp-block {--content-width: %dpx;max-width: var(--content-width);}</style>', $this->contentWidth);
     }
 }
