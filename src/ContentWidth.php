@@ -1,4 +1,5 @@
 <?php
+
 namespace RalfHortt\ContentWidth;
 
 class ContentWidth
@@ -46,6 +47,6 @@ class ContentWidth
      **/
     public function setCssContentWidth(): void
     {
-        printf('<style>.editor-block-list__layout .wp-block {--content-width: %dpx;max-width: var(--content-width);}</style>', $this->contentWidth);
+        printf('<style>.editor-block-list__layout .wp-block, .editor-post-title .wp-block {--content-width: %dpx; max-width: var(--content-width);}</style>', $this->contentWidth);
     }
 }
