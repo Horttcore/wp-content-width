@@ -25,6 +25,7 @@ class ContentWidth
     {
         add_action('init', [$this, 'setWidth']);
         add_action('admin_print_styles-post.php', [$this, 'setCssContentWidth']);
+        add_action('admin_print_styles-post-new.php', [$this, 'setCssContentWidth']);
     }
 
 
