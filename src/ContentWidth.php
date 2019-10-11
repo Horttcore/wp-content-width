@@ -29,6 +29,17 @@ class ContentWidth
         add_action('admin_print_styles-post.php', [$this, 'setBlockWidth']);
         add_action('admin_print_styles-post-new.php', [$this, 'setBlockWidth']);
     }
+    
+    /**
+     * Set global $content_width variable
+     *
+     * @return void
+     **/
+    public function setWidth(): void
+    {
+        global $content_width;
+        $content_width = $this->contentWidth;
+    }
 
     /**
      * Set CSS content width
