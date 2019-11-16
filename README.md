@@ -8,9 +8,18 @@ Setting the global WordPress variable `$content_width` in a single place for php
 
 ## Usage
 
-```<?php
+```php
 <?php
 use RalfHortt\ContentWidth\ContentWidth;
 
 (new ContentWidth(980))->register();
+```
+
+```css
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--content-width);
+	width: 100%;
+}
 ```
