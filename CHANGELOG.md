@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0 - 2019-10-10
+
+- Change admin css selector
+
 ## 1.3.0 - 2019-10-10
 
 - Set custom property variable in front end

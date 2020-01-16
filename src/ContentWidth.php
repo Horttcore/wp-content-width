@@ -59,7 +59,7 @@ class ContentWidth
     public function setBlockWidth(): void
     {
         ?>
-        <style>.editor-block-list__layout .wp-block, .editor-post-title .wp-block {max-width: calc(30px + var(--content-width));}</style>
+        <style type="text/css">.editor-styles-wrapper .wp-block, .editor-post-title .wp-block {max-width: calc(30px + var(--content-width));}</style>
         <?php
     }
 }
